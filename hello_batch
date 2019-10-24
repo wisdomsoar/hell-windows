@@ -6,13 +6,10 @@ C:\> ECHO %foo%
 bar
 
 loop
-SET /A XCOUNT=0
-:loop
-SET /A XCOUNT+=1
-echo %XCOUNT%
-IF "%XCOUNT%" == "4" (
-  GOTO end
-) ELSE (
-  GOTO loop
-)
-:end
+set /a count = 1
+
+:loop_label
+  set /a count += 1
+  ECHO %count%
+  
+goto loop_label
