@@ -1,0 +1,18 @@
+
+Reading the Value of a Variable
+ref: http://steve-jansen.github.io/guides/windows-batch-scripting/part-2-variables.html
+C:\> SET foo=bar
+C:\> ECHO %foo%
+bar
+
+loop
+SET /A XCOUNT=0
+:loop
+SET /A XCOUNT+=1
+echo %XCOUNT%
+IF "%XCOUNT%" == "4" (
+  GOTO end
+) ELSE (
+  GOTO loop
+)
+:end
