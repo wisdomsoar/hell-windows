@@ -1,0 +1,8 @@
+佈署Web service
+Visual Studio: 建置=>發行網站；選除了source code以外的資料夾
+(Server side)複製到server的C:\Inetpub\wwwroot\YourName
+(重要)若是更新logClient，不須覆蓋Web.Config
+開啟IIS管理員
+於左側”YourName”右鍵”內容”
+於應用程式名稱項目右方點”建立”
+於ASP.NET頁籤選ASP.NET版本: 2.0.xxxx
