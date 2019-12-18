@@ -1,0 +1,9 @@
+Excel搜尋功能
+	A     B     C     D     E	        F	
+1	Abc		     Xyz		 (給使用者輸入)		
+2	P          Xyz		 =IF(ISNUMBER(SERARCH($E$1, C2)),”TRUE”, “FALSE”)		
+3	Q		A				
+4	R		b				
+5							
+
+於E1輸入Xyz可以找到A欄的值
