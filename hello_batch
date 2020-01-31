@@ -5,6 +5,18 @@ C:\> SET foo=bar
 C:\> ECHO %foo%
 bar
 
+find string in file
+  FINDSTR "34308cfb1039f9e9a002055bbd304821" md5_%count%.txt
+  if %ERRORLEVEL% == 0 (
+    goto ok2
+  )
+  echo "Not found"
+  pause
+  
+:ok2
+echo "found"
+
+
 Do some operations for each files in current folder:
 ref: https://superuser.com/questions/1249377/how-to-generate-md5-hash-value-for-multiple-files-in-a-folder-using-cmd
 for %%f in (*) do (
