@@ -5,7 +5,8 @@ C:\> SET foo=bar
 C:\> ECHO %foo%
 bar
 
-Do some operations for each files in current folder: 
+Do some operations for each files in current folder:
+ref: https://superuser.com/questions/1249377/how-to-generate-md5-hash-value-for-multiple-files-in-a-folder-using-cmd
 for %%f in (*) do (
 certutil -hashfile "%%f" MD5
 )
