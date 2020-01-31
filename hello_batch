@@ -5,6 +5,11 @@ C:\> SET foo=bar
 C:\> ECHO %foo%
 bar
 
+Do some operations for each files in current folder: 
+for %%f in (*) do (
+certutil -hashfile "%%f" MD5
+)
+
 loop
 set /a count = 1
 
