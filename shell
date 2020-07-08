@@ -1,0 +1,8 @@
+
+ref: https://dotblogs.azurewebsites.net/kevinya/2016/02/16/153912
+遠端執行程式(psexec)
+psexec -u domain\username -p password \\11.200.22.33 -d -w c:\TEMP -i notepad 123.txt
+
+刪除積年累月的Registry data
+psexec.exe -i -s reg delete "HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Enum\USB\VID_18D1&PID_D00D" /f
+
