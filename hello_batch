@@ -40,6 +40,10 @@ adb shell "/data/local/tmp/display_pattern.sh"
 
 timeout 3
 
+:另外一種delay的方法
+ping 127.0.0.1 -n 5 -w 1000 > nul
+:但是-n後面看起來不能是1 (why?)
+
 :loop_label
   set /a count += 1
   adb shell "screencap -p /mnt/user/f%count%.png"
