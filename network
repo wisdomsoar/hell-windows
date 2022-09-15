@@ -1,0 +1,49 @@
+
+
+
+In Windows commandline:
+
+If your network adapter has connected to an AP, you can 
+netsh wlan show interface
+#################################
+Result:
+PS D:\Projects\6890\6856> netsh wlan show interface
+
+系統上有 1 個介面:
+
+    名稱                   : Wi-Fi
+    描述                   : Realtek 8822CE Wireless LAN 802.11ac PCI-E NIC
+    GUID                   : 49045260-3fc5-4d39-9803-60f453ff8967
+    實體位址               : cc:6b:1e:68:64:49
+    狀態                   : 連線
+    SSID                   : XSQUARE_5G
+    BSSID                  : 9c:9d:7e:cc:9d:7a
+    網路類型               : 基礎結構
+    無線電波類型           : 802.11ac
+    驗證                   : WPA3-個人
+    加密方式               : CCMP
+    連線模式               : 設定檔
+    通道                   : 40
+    接收速率 (Mbps)        : 866.7
+    傳輸速率 (Mbps)        : 866.7
+    訊號                   : 100%
+    設定檔                 : XSQUARE_5G
+
+    主控網路狀態  : 無法使用
+
+List SSID:
+netsh wlan show networks
+######################### Result
+介面名稱       : Wi-Fi
+目前有 76 個可見的網路。
+
+SSID 1 : XSQUARE_5G
+    網路類型                : 基礎結構
+    驗證                    : WPA3-個人
+    加密                    : CCMP
+
+SSID 2 : Zyxel_8E21   
+   
+   
+    
+    
