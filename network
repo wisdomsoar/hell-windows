@@ -31,6 +31,7 @@ PS D:\Projects\6890\6856> netsh wlan show interface
 
     主控網路狀態  : 無法使用
 
+(偷放這: Linux Ubuntu可以用這nmcli dev wifi)
 List SSID:
 netsh wlan show networks
 ######################### Result
