@@ -28,9 +28,15 @@ To get output similar to *Nix systems you can add some PowerShell magic:
 $(CertUtil -hashfile C:\TEMP\MyDataFile.img MD5)[1] -replace " ",""
 
 
+tasklist | find /i "test_app.exe"
+
 kill process
 kill RDP:
 taskkill.exe /f /im rdpclip.exe 
 
 kill TRACE32:
 taskkill -f /IM "t32marm.exe"
+
+taskkill /T /f /PID 7332
+
+taskkill /T /F /IM "test_app.exe"
