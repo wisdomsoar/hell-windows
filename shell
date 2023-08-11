@@ -27,6 +27,10 @@ To get output similar to *Nix systems you can add some PowerShell magic:
 
 $(CertUtil -hashfile C:\TEMP\MyDataFile.img MD5)[1] -replace " ",""
 
+在PowerShell底下才可以喔:
+持續Ping，並記錄當下時間
+ping -t 192.168.20.200 |Foreach{“{0} - {1}” -f (Get-Date),$_}  >>  ping_test_log.txt
+
 
 tasklist | find /i "test_app.exe"
 
