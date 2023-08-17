@@ -5,6 +5,13 @@ Thu 08/17/2023
 
 t: Displays the current date without prompting you for a new date
 
+*****************
+or use 
+echo %date%
+echo %time%
+echo %date% %time%
+*****************
+
 Display time:
 echo:| time
 The current time is: 11:18:34.13
