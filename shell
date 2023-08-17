@@ -1,4 +1,16 @@
 
+Display date:
+date /t
+Thu 08/17/2023
+
+t: Displays the current date without prompting you for a new date
+
+Display time:
+echo:| time
+The current time is: 11:18:34.13
+Enter the new time:
+
+
 ref: https://dotblogs.azurewebsites.net/kevinya/2016/02/16/153912
 遠端執行程式(psexec)
 psexec -u domain\username -p password \\11.200.22.33 -d -w c:\TEMP -i notepad 123.txt
