@@ -1,0 +1,12 @@
+
+
+每兩秒去讀ping8888.txt檔案的後面三行
+ 1..999999 | ForEach-Object { Get-Content ping8888.txt -Tail 3; Start-Sleep -Seconds 2 }
+
+想要無限次做事，可以這樣
+while ($true) { ping 8.8.8.8 -n 3 ; Start-Sleep -Seconds 1 }
+
+
+持續ping，並且前面放timestamp
+ping -t 8.8.8.8 | Foreach { "{0}-{1}" -f (Get-Date),$_ } > ping8888.txt
+ping -t的t是不停止的意思
